@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-05-04T15:54:09.973868" rpa="false" schemaversion="5">
+<suite id="s1" name="Wait time" source="D:\robotframework\robottest\Day1\Wait_time.robot">
+<test id="s1-t1" name="LoginTest" line="16">
+<kw name="logIntoApplication">
+<kw name="Get Selenium Speed" owner="Selenium2Library">
+<msg time="2024-05-04T15:54:11.619634" level="INFO">${speed} = 0 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-05-04T15:54:11.618910" elapsed="0.004891"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-04T15:54:11.626734" elapsed="0.001193"/>
+</kw>
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-05-04T15:54:11.629728" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-04T15:54:11.629416" elapsed="10.238538"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-04T15:54:21.868951" elapsed="0.357659"/>
+</kw>
+<kw name="Set Selenium Speed" owner="Selenium2Library">
+<arg>4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-05-04T15:54:22.227319" elapsed="0.001167"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-05-04T15:54:22.231095" level="INFO">Clicking element 'xpath://a[normalize-space()='Log in']'.</msg>
+<arg>xpath://a[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-04T15:54:22.229099" elapsed="8.771920"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-05-04T15:54:31.002016" level="INFO">Typing text 'bhavanavalahatti@gmail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-04T15:54:31.001019" elapsed="12.345097"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-05-04T15:54:43.348455" level="INFO">Typing text 'Admin123' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-04T15:54:43.347138" elapsed="12.340009"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-05-04T15:54:55.688150" level="INFO">Clicking element 'xpath://button[normalize-space()='Log in']'.</msg>
+<arg>xpath://button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-04T15:54:55.687147" elapsed="10.935654"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"login succesfully"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-04T15:55:06.623800" elapsed="0.001994"/>
+</kw>
+<kw name="Get Selenium Speed" owner="Selenium2Library">
+<msg time="2024-05-04T15:55:06.627927" level="INFO">${speed} = 4 seconds</msg>
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-05-04T15:55:06.626999" elapsed="0.000928"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-04T15:55:06.628790" elapsed="0.000993"/>
+</kw>
+<status status="PASS" start="2024-05-04T15:54:11.615645" elapsed="55.015136"/>
+</kw>
+<status status="PASS" start="2024-05-04T15:54:11.613649" elapsed="55.018129"/>
+</test>
+<status status="PASS" start="2024-05-04T15:54:10.004948" elapsed="56.631816"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Wait time">Wait time</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

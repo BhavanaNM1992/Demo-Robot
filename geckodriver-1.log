@@ -1,0 +1,16 @@
+1713679768310	geckodriver	INFO	Listening on 127.0.0.1:54168
+1713679771489	mozrunner::runner	INFO	Running command: "C:\\Users\\DELL\\.cache\\selenium\\firefox\\win64\\125.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 69" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileC7tCSu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1713679772677	Marionette	INFO	Marionette enabled
+1713679772912	Marionette	INFO	Listening on port 54179
+WebDriver BiDi listening on ws://127.0.0.1:54169
+Read port: 54179
+1713679773394	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54169/devtools/browser/a4d5505c-0a7b-4600-93f9-ce5d61151a83
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+JavaScript error: https://opensource-demo.orangehrmlive.com/web/dist/js/app.js?v=1711595107870, line 1: TypeError: e.error is undefined
+JavaScript error: https://opensource-demo.orangehrmlive.com/web/dist/js/app.js?v=1711595107870, line 1: TypeError: e.error is undefined
+1713679801227	Marionette	INFO	Stopped listening on port 54179
+Dynamically enable window occlusion 1

@@ -1,0 +1,25 @@
+1713784422943	geckodriver	INFO	Listening on 127.0.0.1:60024
+1713784426073	mozrunner::runner	INFO	Running command: "C:\\Users\\DELL\\.cache\\selenium\\firefox\\win64\\125.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 25" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileEUbbSD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1713784427232	Marionette	INFO	Marionette enabled
+1713784427493	Marionette	INFO	Listening on port 60034
+WebDriver BiDi listening on ws://127.0.0.1:60025
+Read port: 60034
+1713784428297	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60025/devtools/browser/d9fd5bfe-e41d-4a29-bc2a-9d1fb1cf6f08
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: unreachable code after return statement
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1713784436515	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1713784457325	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1, line 530: Script terminated by timeout at:
+get@https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1:530:115
+stop@https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1:530:87
+aa.tk/c/<@https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1:530:412
+
+1713795788909	Marionette	INFO	Stopped listening on port 60034
+Dynamically enable window occlusion 1

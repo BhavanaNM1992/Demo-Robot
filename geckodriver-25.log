@@ -1,0 +1,23 @@
+1713970084990	geckodriver	INFO	Listening on 127.0.0.1:57015
+1713970088108	mozrunner::runner	INFO	Running command: "C:\\Users\\DELL\\.cache\\selenium\\firefox\\win64\\125.0.2\\firefox.exe" "--marionette" "--remote-debugging ... 16" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofilen111ji"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1713970089398	Marionette	INFO	Marionette enabled
+1713970089660	Marionette	INFO	Listening on port 57025
+WebDriver BiDi listening on ws://127.0.0.1:57016
+Read port: 57025
+1713970090094	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57016/devtools/browser/0a9fe870-a178-493b-9513-2b3b8a2b69a7
+JavaScript warning: https://www.yatra.com/Y3BR8AZz1/icoOnQ5k/g/5QL3JtcVc2Ei/HwsSMCkYAQ/Em/0xHTpDYQw, line 1: unreachable code after return statement
+JavaScript warning: https://www.yatra.com/Y3BR8AZz1/icoOnQ5k/g/5QL3JtcVc2Ei/HwsSMCkYAQ/Em/0xHTpDYQw, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.yatra.com/Y3BR8AZz1/icoOnQ5k/g/5QL3JtcVc2Ei/HwsSMCkYAQ/Em/0xHTpDYQw, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.yatra.com/Y3BR8AZz1/icoOnQ5k/g/5QL3JtcVc2Ei/HwsSMCkYAQ/Em/0xHTpDYQw, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1713970097561	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1, line 538: Script terminated by timeout at:
+get@https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1:538:115
+stop@https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1:538:87
+aa.Bk/c/<@https://www.googletagmanager.com/gtag/js?id=G-V6YSFESQE4&cx=c&_slc=1:538:412
+
+1713970113707	Marionette	INFO	Stopped listening on port 57025
+Dynamically enable window occlusion 1

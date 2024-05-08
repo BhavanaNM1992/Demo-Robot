@@ -1,0 +1,22 @@
+1713784284943	geckodriver	INFO	Listening on 127.0.0.1:59870
+1713784288067	mozrunner::runner	INFO	Running command: "C:\\Users\\DELL\\.cache\\selenium\\firefox\\win64\\125.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 71" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileRwZEMT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1713784289527	Marionette	INFO	Marionette enabled
+1713784289758	Marionette	INFO	Listening on port 59880
+WebDriver BiDi listening on ws://127.0.0.1:59871
+Read port: 59880
+1713784290133	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59871/devtools/browser/0ec2f06d-e5ee-4696-b804-f981a036c295
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: unreachable code after return statement
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.yatra.com/JtaHY1wqLp/ydylUiY8/lf/9t1EzrSVcLf7am/AXBCTA/dWB2FQk/IJmk, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1713784296570	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1713784301378	Marionette	INFO	Stopped listening on port 59880
+JavaScript warning: https://www.yatra.com/fresco/resources/toucan/dist/js/app.js?version=202404191132, line 8: Script terminated by timeout at:
+value@https://www.yatra.com/fresco/resources/toucan/dist/js/app.js?version=202404191132:8:21183
+covidProcessRefundFlow@https://www.yatra.com/:1037:24
+
+Dynamically enable window occlusion 1

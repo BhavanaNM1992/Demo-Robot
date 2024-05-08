@@ -1,0 +1,28 @@
+This framework mainly used for acceptance testing.
+Accepatnce test-driven development(ATDD)
+Utilizes the Keyword driven approches
+
+Inside robot framework ->Builtin-library,selenium Library,DB Library,DateTime library,
+
+To start robot-framework testing
+-python
+-IDE-Pycharm
+-selenium
+-robotframework
+-robotframework selenium2Library
+
+all testcaes .robot is must
+if we directly mentioned xpath in the testcases  without mentioning xpath, id, name ->
+// it is called implicit locators
+
+xpath://
+id:
+name:
+these called explicit locators
+
+scalar variables hold single value
+variables which define in upper case -> global variables
+local variables-> which define in lower case
+
+list variables holds multiple values ->@{list_variable}
+to retrive the value provide index ex: @{list_varible}[2]

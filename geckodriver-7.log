@@ -1,0 +1,17 @@
+1713711390850	geckodriver	INFO	Listening on 127.0.0.1:52594
+1713711394104	mozrunner::runner	INFO	Running command: "C:\\Users\\DELL\\.cache\\selenium\\firefox\\win64\\125.0.1\\firefox.exe" "--marionette" "--remote-debugging ... 95" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileJtohyl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1713711396691	Marionette	INFO	Marionette enabled
+1713711397256	Marionette	INFO	Listening on port 52608
+WebDriver BiDi listening on ws://127.0.0.1:52595
+Read port: 52608
+1713711397727	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52595/devtools/browser/00b63811-2970-4a31-b2b0-1fecb69b0822
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+JavaScript error: https://opensource-demo.orangehrmlive.com/web/dist/js/app.js?v=1711595107870, line 1: TypeError: e.error is undefined
+JavaScript error: https://opensource-demo.orangehrmlive.com/web/dist/js/app.js?v=1711595107870, line 1: TypeError: e.error is undefined
+1713711426741	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1713712870961	Marionette	INFO	Stopped listening on port 52608
+Dynamically enable window occlusion 1

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-04-21T11:32:12.384862" rpa="false" schemaversion="5">
+<suite id="s1" name="Cookies" source="D:\robotframework\robottest\Practice\cookies.robot">
+<test id="s1-t1" name="adding cookies" line="11">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-04-21T11:32:12.828089" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T11:32:12.828089" elapsed="9.067708"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-21T11:32:21.896800" elapsed="0.126922"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="Selenium2Library">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-04-21T11:32:22.023722" elapsed="0.002074"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-04-21T11:32:22.026879" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T11:32:22.025796" elapsed="0.717404"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-04-21T11:32:22.745196" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T11:32:22.744199" elapsed="0.387313"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-04-21T11:32:23.133033" level="INFO">Clicking element 'xpath://button[normalize-space()='Login']'.</msg>
+<arg>xpath://button[normalize-space()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T11:32:23.132511" elapsed="1.273168"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"login succesfully"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-21T11:32:24.406693" elapsed="0.000981"/>
+</kw>
+<kw name="Get Cookies" owner="Selenium2Library">
+<msg time="2024-04-21T11:32:24.424628" level="INFO">${cookie} = orangehrm=79ac9a2cd93f09865a0572f977bc1d39</msg>
+<var>${cookie}</var>
+<doc>Returns all cookies of the current page.</doc>
+<status status="PASS" start="2024-04-21T11:32:24.408671" elapsed="0.015957"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cookie}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-21T11:32:24.425625" elapsed="0.000000"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-04-21T11:32:24.426622" level="INFO">Length is 42.</msg>
+<msg time="2024-04-21T11:32:24.426622" level="INFO">${len_cookie} = 42</msg>
+<var>${len_cookie}</var>
+<arg>${cookie}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-04-21T11:32:24.425625" elapsed="0.000997"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${len_cookie}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-21T11:32:24.426622" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-21T11:32:12.825885" elapsed="11.601734"/>
+</test>
+<status status="PASS" start="2024-04-21T11:32:12.403638" elapsed="12.023981"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Cookies">Cookies</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

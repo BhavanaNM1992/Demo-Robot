@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-05-03T19:47:17.902899" rpa="false" schemaversion="5">
+<suite id="s1" name="Search Verify" source="D:\robotframework\robottest\Practice\search_verify.robot">
+<test id="s1-t1" name="search products" line="13">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:18.399607" level="INFO">Opening browser 'chrome' to base url 'https://www.yatra.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-03T19:47:18.398510" elapsed="17.492579"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-03T19:47:35.892084" elapsed="0.264951"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="Selenium2Library">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-03T19:47:36.159008" elapsed="0.003990"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:36.166988" level="INFO">Clicking element 'xpath://label[@for='BE_flight_origin_city']'.</msg>
+<arg>xpath://label[@for='BE_flight_origin_city']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:36.163995" elapsed="1.231296"/>
+</kw>
+<kw name="Get WebElements" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.752749" level="INFO">@{origin_count} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.124")&gt; | &lt;selenium.webd...</msg>
+<var>@{origin_count}</var>
+<arg>xpath://div[@class='viewport']//div [@class='ac_airport']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.396287" elapsed="0.357448"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-05-03T19:47:37.759546" level="INFO">${new_list} = []</msg>
+<var>${new_list}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.759546" elapsed="0.001000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.796142" level="INFO">${origin_text} = New Delhi (DEL)
+Indira Gandhi International</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.762545" elapsed="0.033597"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.796142" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.124")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.762545" elapsed="0.033597"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.818063" level="INFO">${origin_text} = Mumbai (BOM)
+Chhatrapati Shivaji International</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.797202" elapsed="0.020861"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.818063" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.125")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.797202" elapsed="0.020861"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.831682" level="INFO">${origin_text} = Bangalore (BLR)
+Kempegowda International</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.819060" elapsed="0.012622"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.832786" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.126")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.818063" elapsed="0.014723"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.846441" level="INFO">${origin_text} = Chennai (MAA)
+Chennai International</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.832786" elapsed="0.013655"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.846441" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.127")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.832786" elapsed="0.013655"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.862916" level="INFO">${origin_text} = Hyderabad (HYD)
+Shamshabad Rajiv Gandhi</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.847500" elapsed="0.015416"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.862916" elapsed="0.000999"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.128")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.847500" elapsed="0.016415"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.879874" level="INFO">${origin_text} = Goa (GOI)
+Dabolim</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.864911" elapsed="0.014963"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.879874" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.129")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.863915" elapsed="0.016956"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.893130" level="INFO">${origin_text} = Kolkata (CCU)
+Netaji Subhas Chandra Bose</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.880871" elapsed="0.012259"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.894206" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.130")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.880871" elapsed="0.013335"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.906759" level="INFO">${origin_text} = Pune (PNQ)
+Lohegaon</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.894206" elapsed="0.012553"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.906759" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.131")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.894206" elapsed="0.012553"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.919343" level="INFO">${origin_text} = Jaipur (JAI)
+Sanganeer</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.907827" elapsed="0.011516"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.919343" elapsed="0.001061"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.132")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.906759" elapsed="0.013645"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Selenium2Library">
+<msg time="2024-05-03T19:47:37.932896" level="INFO">${origin_text} = Lucknow (LKO)
+Amausi</msg>
+<var>${origin_text}</var>
+<arg>${i}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.920404" elapsed="0.012492"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${new_list}</arg>
+<arg>${origin_text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.933897" elapsed="0.000061"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="a8d29dec7115a5e3418d935d5450f72c", element="f.728F0F982245BEC0567D665DF15106E1.d.31C44C4E732C77AEF51422EE27E59E7F.e.133")&gt;</var>
+<status status="PASS" start="2024-05-03T19:47:37.920404" elapsed="0.013554"/>
+</iter>
+<var>${i}</var>
+<value>@{origin_count}</value>
+<status status="PASS" start="2024-05-03T19:47:37.761542" elapsed="0.172416"/>
+</for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${new_list}[2]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-03T19:47:37.934957" elapsed="0.000000"/>
+</kw>
+<doc>search verification</doc>
+<status status="PASS" start="2024-05-03T19:47:18.396380" elapsed="19.539653"/>
+</test>
+<status status="PASS" start="2024-05-03T19:47:17.906045" elapsed="20.032057"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Search Verify">Search Verify</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
